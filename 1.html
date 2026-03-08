@@ -5,9 +5,38 @@
 <head>
 	<title> WEB1- 1.html</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
+	<style>
+		h1 {
+			font-size: 45px;
+			text-align: center;
+			border-bottom: 1px solid gray;
+			margin: 0px;
+			padding: 20px;
+		}
+
+		ol {
+			border-right: 1px solid gray;
+			width: 100px;
+			margin: 0;
+			padding: 20px;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		@media (max-width :800px) {
+			#grid {
+				display: blcok;
+			}
+
+			#grid ol {
+				border-right: none;
+			}
+		}
+	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="colors.js"></script>
+	<script src="colors.js"></script>
 </head>
 
 <body>
@@ -17,12 +46,12 @@
 	">
 	<div id="grid">
 		<ol>
-			<li> <a href="1.html"> HTML </a></li>
-			<li> <a href="2.html">CSS </a></Li>
+			<li> <a href="1.html" class="saw" id="active"> HTML </a></li>
+			<li> <a href="2.html" class="saw">CSS </a></Li>
 			<li> <a href="3.html">JavaScrip</a></li>
 		</ol>
 
-		<div >
+		<div id="article">
 			<h2>HTML 이란 무엇인가</h2>
 			<p><a href="https://www.w3.org/TR/html5/" target="_blank" title="HTMLS Specification">Hypertext Markup
 					Language (HTML)</a>is the standard markup language for <strong>creating <u>web</u> pages</strong>
